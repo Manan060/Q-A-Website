@@ -1,0 +1,55 @@
+:root {
+    --main-color: #183b8c;
+    --main-color-darker: #941e1a;
+    --white: #ffffff;
+    --dropdown-radius: 50px;
+  }
+
+.body{
+    font-family: sans-serif;
+    color: #000;
+}
+
+a{
+    color: #183b8c;
+}
+
+.nav-link{
+    color: #183b8c;
+}
+
+.border-gray {
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-width: 1px;
+}
+
+
+
+.text-main-color {
+    color: var(--main-color)
+}
+
+
+
+.nav-link:hover {
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+
+.navbar-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+

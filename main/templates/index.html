@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="{% static 'js/main.js' %}?{% now " U" %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}?{% now " U" %}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <title>HomePage</title>
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/1.jpg' %}?{% now " U" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/2.jpg' %}?{% now " U" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/3.jpg' %}?{% now " U" %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <main>
+
+   <div class="webcontent" >
+    <article class="overlay">
+      <h2>Why CHARUSAT Quora exists?</h2>
+
+      <p> CHARUSAT Quora’s mission is to share and grow the University's knowledge. Not all knowledge can be written down, but much of
+        that which can be, still isn't. It remains in people’s heads or only accessible if you know the right people. We
+        want to connect the people who have knowledge to the people who need it, to bring together people with different
+        perspectives so they can understand each other better, and to empower everyone to share their knowledge for the
+        benefit of the rest of the students.</p>
+
+      <h2>Gather around a question</h2>
+
+      <p>The heart of Quora is questions — questions that affect the world, questions that explain recent events,
+        questions that guide important decisions, and questions that provide insights in what other people think
+        . CHARUSAT Quoraa is a place where you can ask questions that matter to you and get answers from people who
+        have been there and done that.</p>
+
+      <h2>Tell a story</h2>
+
+      <p>Ever since the first humans gathered around a fire and turned their gaze to the stars, humanity has shared
+        knowledge through stories. Spaces are digital campfires for collective meaning making which expand knowledge
+        sharing from interrogative to narrative. In Spaces, creators build audiences of millions for their unique
+        insights or audiences of thousands for niche knowledge that can't be found anywhere else.</p>
+    </article>
+
+  </div>
+
+
+
+  </main>
+
+
+
+  <div class="footer-basic">
+    <footer style="padding:40px 0;
+        background-color:lightgray;
+        color:#4b4c4d;">
+      <div class="social">
+        <a href="#" style="color:#183b8c;"><i class="icon ion-social-instagram"></i></a>
+        <a href="#" style="color:#183b8c;"><i class="icon ion-social-snapchat"></i></a>
+        <a href="#" style="color:#183b8c;"><i class="icon ion-social-twitter"></i></a>
+        <a href="#" style="color:#183b8c;"><i class="icon ion-social-facebook"></i></a>
+      </div>
+      <ul class="list-inline" style="padding:0;
+          list-style:none;
+          text-align:center;
+          font-size:18px;
+          line-height:1.6;
+          margin-bottom:0;">
+        <li class="list-inline-item" style=" padding:0 10px; color:#183b8c;"><a href="#">Home</a></li>
+        <li class="list-inline-item" style=" padding:0 10px; color:#183b8c;"><a href="#">Services</a></li>
+        <li class="list-inline-item" style=" padding:0 10px; color:#183b8c;"><a href="#">About</a></li>
+        <li class="list-inline-item" style=" padding:0 10px; color:#183b8c;"><a href="#">Terms</a></li>
+        <li class="list-inline-item" style=" padding:0 10px; color:#183b8c;"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">MANAN PATHAK_20CS060</p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

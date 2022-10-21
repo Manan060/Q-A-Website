@@ -1,0 +1,277 @@
+html,
+body {
+  font-family: sans-serif;
+ 
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+blockquote {
+  border-left: 6px solid lightgray;
+  padding-left: 6px;
+  margin-left: 15px;
+}
+
+.main {
+  max-width: 100 px;
+  margin: 60px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #183b8c;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 24px;
+
+  border-bottom: 1px solid lightgray;
+}
+
+.user-menu ul li a,
+.main-menu ul li a {
+  color: black;
+  font-weight: 700;
+}
+
+.user-menu ul li a:hover,
+.main-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.user-menu ul li {
+  display: inline;
+  margin-left: 12px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-question-page,
+.login-page,
+.register-page {
+  margin: 0 auto;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.title {
+  margin: 20px auto 30px auto;
+  font-weight: 900;
+}
+
+.question-list-item {
+  margin-bottom: 20px;
+}
+
+.question-list-item a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.question-list-item-title {
+  color:white;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0
+}
+
+.question-list-item-author {
+  color: lightgray;
+  margin: 0;
+}
+
+.register-form {
+  width: 100%;
+}
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.fieldWrapper label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fieldWrapper input {
+  margin-bottom: 6px;
+  border: 1px solid lightgray;
+  min-height: 40px;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+}
+
+.errorlist {
+  margin: 0;
+}
+
+.non_form_errors {
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  display: block;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.question-title {
+  font-weight: 900;
+  margin: 20px auto 0 auto;
+}
+
+.question-body {
+  margin-bottom: 6px;
+}
+
+.question-author {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.817);
+}
+
+.responses-container {
+  border-top: 1px solid rgb(197, 209, 27);
+  margin-top: 30px;
+}
+
+.responses-container-heading {
+  color: white;
+}
+
+.no-responses-text {
+  color: rgb(198, 174, 36);
+}
+
+.response-body {
+  margin: 0;
+}
+
+.response-author {
+  color: white;
+  font-style: italic;
+}
+
+.reply-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-transform: lowercase;
+  color: chocolate;
+  cursor: pointer;
+}
+
+.response-form {
+  margin-top: 20px;
+  border-top: 1px solid rgb(198, 174, 36);
+  padding: 30px;
+}
+
+.reply-form-container {
+  display: none;
+}
+
+.reply-form-container.enabled {
+  display: block;
+}
+
+.reply-form textarea {
+  width: 100%;
+}
+
+.reply-form-cancel-button {
+  font-weight: 600;
+  color: orange;
+  background-color: transparent;
+  border: none;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.reply-form-submit-button {
+  font-weight: 600;
+  color: white;
+  background-color: orange;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #183b8c;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#183b8c;
+  margin-bottom:0;
+}
+
+.webcontent h2{
+  font-family: 'Secular One', sans-serif;
+  color: #183b8c;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.webcontent p{
+  padding: 5px;
+  font-family: 'Secular One', sans-serif;
+}

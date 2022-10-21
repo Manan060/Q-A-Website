@@ -1,0 +1,27 @@
+{% extends 'layouts/page.html' %}
+
+{% block content %}
+<h1 class="title" style="text-align: center; color:white">Feed</h1>
+<div class="bg-white border-gray mt-4">
+  <div class="post-body pt-2 ps-3">
+    <div class="post-title fw-bold">
+      {% for question in questions %}
+    
+        <a class="text-decoration-none text-black" href="{% url 'question' question.id %}">
+          
+    
+         
+          <p class="question-list-item-title" style="color: #183b8c;">
+           Question: {{question.title}}
+          </p>
+          <p class="question-list-item-author" >
+            {{question.author.username}}
+          </p>
+        </a>
+      
+   
+    {% endfor %}
+  </div>
+  </div>
+</div>
+{% endblock %}
